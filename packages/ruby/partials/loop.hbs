@@ -13,7 +13,7 @@
             <div class="u-placeholder same-height rectangle">
                 <img
                     class="post-image u-object-fit"
-                    srcset="{{img_url feature_image size="s"}} 400w,
+                    srcset="{{img_url feature_image size="s"}} 400w
                             {{img_url feature_image size="m"}} 750w,
                             {{img_url feature_image size="l"}} 960w,
                             {{img_url feature_image size="xl"}} 1140w,
@@ -32,7 +32,9 @@
         <header class="post-header">
             {{#primary_tag}}
                 <span class="post-tag">{{name}}</span>
+                <span class="post-reading-time"> &bull; </span>
             {{/primary_tag}}
+                <span class="post-reading-time">{{reading_time}}</span>
 
             <h2 class="post-title">
                 {{title}}

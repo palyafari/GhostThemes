@@ -20,7 +20,16 @@
 }
 
 .u-placeholder.rectangle {
-    padding-bottom: 56.25%;
+    padding-bottom: 100.25%;
+}
+
+.u-placeholder.square-image {
+    width: 100px;
+    /* Set the desired width */
+    height: 100px;
+    /* Set the same value as width */
+    object-fit: cover;
+    /* Maintain aspect ratio */
 }
 
 .u-object-fit {

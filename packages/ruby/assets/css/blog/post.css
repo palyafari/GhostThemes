@@ -1,6 +1,6 @@
 .post-feed {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -31,6 +31,17 @@
     font-weight: 700;
     line-height: 1;
     color: var(--tag-color, var(--ghost-accent-color));
+    text-transform: uppercase;
+    letter-spacing: 0.005em;
+}
+
+.post-reading-time {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--secondary-text-color);
     text-transform: uppercase;
     letter-spacing: 0.005em;
 }
