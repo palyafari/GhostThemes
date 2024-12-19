@@ -34,10 +34,12 @@
 
     {{> "post-navigation"}}
 
-    {{#if comments}}
-        <div class="gh-comments gh-canvas">
-            {{comments}}
-        </div>
+    {{#if @site.members_enabled}}
+        {{#if comments}}
+            <div class="gh-comments gh-canvas">
+                {{comments}}
+            </div>
+        {{/if}}
     {{/if}}
 
     {{/post}}
