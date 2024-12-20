@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    grid-auto-rows: 1fr; /* Ensures all rows have the same height */
 }
 
 .post-link {
@@ -20,7 +21,7 @@
 
 .post-wrapper {
     flex-grow: 1;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     background-color: var(--white-color);
 }
 

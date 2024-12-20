@@ -1,26 +1,24 @@
 <div class="gh-canvas">
     <div class="navigation">
         {{#prev_post}}
-            <a class="navigation-item navigation-previous" href="{{url}}">
-                {{#primary_tag}}
-                    <span class="navigation-label">Previous post about <span class="post-tag">{{name}}</span></span>
-                {{else}}
-                    <span class="navigation-label">Previous post</span>
-                {{/primary_tag}}
-                
-                <h4 class="navigation-title">{{title}}</h4>
-            </a>
+        <a class="navigation-item navigation-previous" href="{{url}}">
+            <span class="navigation-label">
+                <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 1L2 5.5L6.5 10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                </svg>
+                Previous post
+            </span>
+        </a>
         {{/prev_post}}
         {{#next_post}}
-            <a class="navigation-item navigation-next" href="{{url}}">
-                {{#primary_tag}}
-                    <span class="navigation-label">Next post about <span class="post-tag">{{name}}</span></span>
-                {{else}}
-                    <span class="navigation-label">Next post</span>
-                {{/primary_tag}}
-                
-                <h4 class="navigation-title">{{title}}</h4>
-            </a>
+        <a class="navigation-item navigation-next" href="{{url}}">
+            <span class="navigation-label">
+                Next post
+                <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 1L8 5.5L3.5 10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                </svg>
+            </span>
+        </a>
         {{/next_post}}
     </div>
 </div>
