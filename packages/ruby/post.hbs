@@ -26,6 +26,12 @@
 
         <div class="gh-content gh-canvas">
             {{content}}
+            {{#has tag="# Review Copy"}}
+            <div class="kg-card kg-callout-card kg-callout-card-grey">
+                <div class="kg-callout-emoji">🧩</div>
+                <div class="kg-callout-text"><b>Disclaimer:</b><br>A copy of the game was provided by the publisher. Read our <a href="https://boardgamediaries.com/content-policy/">content policy</a>.</div>
+            </div>
+            {{/has}}
         </div>
 
     </article>
