@@ -62,3 +62,14 @@
         margin-top: 8px;
     }
 }
+
+
+.gh-head-social {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.gh-head-social .gh-icon-btn {
+    margin-right: 10px;
+}

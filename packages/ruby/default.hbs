@@ -33,6 +33,12 @@
                 {{navigation}}
                 {{#unless @site.members_enabled}}
                     {{#match @custom.navigation_layout "Stacked"}}
+                        <div class="gh-head-social">
+                            <a href="https://www.instagram.com/board.game.diaries/" class="gh-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                            <a href="https://www.facebook.com/board.game.diaries" class="gh-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                            <a href="https://bsky.app/profile/boardgamediaries.bsky.social" class="gh-icon-btn" aria-label="Blusky" target="_blank" rel="noopener">{{> "icons/blusky"}}</a>
+                            <a href="https://www.tiktok.com/@board.game.diaries" class="gh-icon-btn" aria-label="TikTok" target="_blank" rel="noopener">{{> "icons/tiktok"}}</a>
+                        </div>
                         <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     {{/match}}
                 {{/unless}}
@@ -41,9 +47,21 @@
             <div class="gh-head-actions">
                 {{#unless @site.members_enabled}}
                     {{^match @custom.navigation_layout "Stacked"}}
+                        <div class="gh-head-social">
+                            <a href="https://www.instagram.com/board.game.diaries/" class="gh-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                            <a href="https://www.facebook.com/board.game.diaries" class="gh-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                            <a href="https://bsky.app/profile/boardgamediaries.bsky.social" class="gh-icon-btn" aria-label="Blusky" target="_blank" rel="noopener">{{> "icons/blusky"}}</a>
+                            <a href="https://www.tiktok.com/@board.game.diaries" class="gh-icon-btn" aria-label="TikTok" target="_blank" rel="noopener">{{> "icons/tiktok"}}</a>
+                        </div>
                         <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     {{/match}}
                 {{else}}
+                    <div class="gh-head-social">
+                        <a href="https://www.instagram.com/board.game.diaries/" class="gh-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                        <a href="https://www.facebook.com/board.game.diaries" class="gh-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                        <a href="https://bsky.app/profile/boardgamediaries.bsky.social" class="gh-icon-btn" aria-label="Blusky" target="_blank" rel="noopener">{{> "icons/blusky"}}</a>
+                        <a href="https://www.tiktok.com/@board.game.diaries" class="gh-icon-btn" aria-label="TikTok" target="_blank" rel="noopener">{{> "icons/tiktok"}}</a>
+                    </div>
                     <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     <div class="gh-head-members">
                         {{#unless @member}}
