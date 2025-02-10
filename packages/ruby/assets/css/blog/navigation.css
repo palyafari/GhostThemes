@@ -51,15 +51,17 @@
 
 @media (max-width: 767px) {
     .navigation {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .navigation-item {
-        width: 100%;
+        width: auto;
     }
 
     .navigation-next {
-        margin-top: 8px;
+        margin-top: 0;
     }
 }
 
