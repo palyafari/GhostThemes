@@ -38,6 +38,7 @@
 .post-feed .featured .post-wrapper {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .post-feed .featured .post-header {
