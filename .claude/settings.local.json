@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Asana__create_task_preview_v2"
+    ]
+  }
+}

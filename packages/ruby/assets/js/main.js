@@ -2,6 +2,20 @@
     pagination(true);
 
     var processed = new WeakSet();
+    var equalizeTimeout;
+
+    function equalizeCardHeights() {
+        var posts = Array.from(document.querySelectorAll('.post-feed .post'));
+        if (!posts.length) return;
+        posts.forEach(function(p) { p.style.minHeight = ''; });
+        var maxH = posts.reduce(function(m, p) { return Math.max(m, p.offsetHeight); }, 0);
+        if (maxH > 0) posts.forEach(function(p) { p.style.minHeight = maxH + 'px'; });
+    }
+
+    function scheduleEqualize() {
+        clearTimeout(equalizeTimeout);
+        equalizeTimeout = setTimeout(equalizeCardHeights, 150);
+    }
 
     function applyAspectRatio(img) {
         if (processed.has(img)) return;
@@ -27,6 +41,7 @@
         }
 
         figure.classList.remove('post-media--pending');
+        scheduleEqualize();
     }
 
     function checkAllCardImages() {
@@ -35,5 +50,7 @@
 
     checkAllCardImages();
     window.addEventListener('load', checkAllCardImages);
+    window.addEventListener('load', scheduleEqualize);
     window.addEventListener('scroll', checkAllCardImages, {passive: true});
+    window.addEventListener('resize', scheduleEqualize);
 })();
