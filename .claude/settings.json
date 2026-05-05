@@ -3,7 +3,9 @@
     "allow": [
       "mcp__claude_ai_Asana__get_me",
       "Bash(cp /Users/renatapalyafari/.claude/projects/-Users-renatapalyafari-workspace-GhostThemes/memory/project_ruby_post_cards.md /Users/renatapalyafari/workspace/GhostThemes/.claude/memory/)",
-      "Bash(cp /Users/renatapalyafari/.claude/projects/-Users-renatapalyafari-workspace-GhostThemes/memory/project_ruby_featured.md /Users/renatapalyafari/workspace/GhostThemes/.claude/memory/)"
+      "Bash(cp /Users/renatapalyafari/.claude/projects/-Users-renatapalyafari-workspace-GhostThemes/memory/project_ruby_featured.md /Users/renatapalyafari/workspace/GhostThemes/.claude/memory/)",
+      "mcp__claude_ai_Asana__create_task_preview_v3",
+      "mcp__claude_ai_Asana__create_task_confirm"
     ],
     "additionalDirectories": [
       "/Users/renatapalyafari/workspace/GhostThemes/.claude"

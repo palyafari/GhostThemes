@@ -1,0 +1,47 @@
+.tag-review .featured {
+    min-height: 0;
+}
+
+.tag-review .featured .post-link::before {
+    display: none;
+}
+
+.tag-review .featured .post-media {
+    background-color: var(--light-gray-color);
+}
+
+.tag-review .featured .post-media .post-image {
+    display: block;
+}
+
+.tag-review .featured .u-placeholder,
+.tag-review .featured .post-footer {
+    background-color: transparent;
+}
+
+.tag-review .featured .post-wrapper {
+    justify-content: flex-start;
+    background-color: var(--white-color);
+}
+
+.tag-review .featured .post-tag {
+    color: var(--tag-color, var(--ghost-accent-color));
+}
+
+.tag-review .featured .post-title,
+.tag-review .featured .post-more {
+    color: var(--primary-text-color);
+}
+
+.tag-review .featured .post-footer {
+    background-color: var(--white-color);
+    border-color: var(--light-gray-color);
+}
+
+.tag-review .featured .post-author-image {
+    border-color: var(--white-color);
+}
+
+.tag-review .post-excerpt {
+    display: none;
+}
